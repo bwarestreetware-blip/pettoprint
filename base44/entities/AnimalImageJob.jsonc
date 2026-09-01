@@ -1,0 +1,14 @@
+{
+  "name": "AnimalImageJob",
+  "type": "object",
+  "properties": {
+    "status": { "type": "string", "enum": ["queued", "processing", "completed", "failed"] },
+    "animal": { "type": "string" },
+    "prompt": { "type": "string" },
+    "style": { "type": "string" },
+    "aspectRatio": { "type": "string" },
+    "count": { "type": "number" },
+    "imageUrls": { "type": "array", "items": { "type": "string" } },
+    "error": { "type": "string" }
+  }
+}
