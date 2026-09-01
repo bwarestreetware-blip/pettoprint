@@ -1,0 +1,14 @@
+:root { font-family: Inter, system-ui, sans-serif; color: #f5f5f5; background: #111; }
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 1100px; background: #111; }
+.app { min-height: 100vh; }
+.topbar { height: 56px; display: flex; align-items: center; justify-content: space-between; padding: 0 20px; border-bottom: 1px solid #2b2b2b; background: #171717; }
+.topbar span { color: #888; font-size: 12px; }
+.workspace { display: grid; grid-template-columns: 180px 1fr 260px; height: calc(100vh - 56px); }
+.sidebar, .inspector { background: #181818; padding: 16px; border-right: 1px solid #2b2b2b; }
+.inspector { border-right: 0; border-left: 1px solid #2b2b2b; }
+.sidebar button { display: block; width: 100%; margin-bottom: 8px; padding: 12px; text-align: left; border: 0; border-radius: 6px; background: #242424; color: #ddd; cursor: pointer; }
+.editor { display: grid; grid-template-rows: 1fr 300px; min-width: 0; }
+.preview { display: grid; place-items: center; margin: 24px; border: 1px solid #333; border-radius: 8px; background: #080808; color: #777; }
+.timeline { padding: 16px; border-top: 1px solid #2b2b2b; background: #141414; }
+.track { height: 70px; margin-bottom: 8px; padding: 12px; border: 1px solid #303030; border-radius: 5px; background: #1d1d1d; color: #777; }
